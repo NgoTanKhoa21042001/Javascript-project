@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #5372f0;
+  padding: 0 10px;
+}
+
+.wrapper {
+  padding: 35px;
+  overflow-x: hidden;
+  position: relative;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 13px;
+}
+
+.wrapper .icon {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.icon:first-child {
+  left: 0;
+  background: linear-gradient(90deg, #fff 70%, transparent);
+}
+
+.icon:last-child {
+  right: 0;
+  background: linear-gradient(-90deg, #fff 70%, transparent);
+  justify-content: flex-end;
+}
+
+.icon ion-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 55px;
+  text-align: center;
+  background-color: #d8d5f2;
+  border-radius: 50%;
+}
+
+.icon:first-child ion-icon {
+  margin-left: 15px;
+}
+.icon:last-child ion-icon {
+  margin-right: 15px;
+}
+
+.wrapper .tabs-box {
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+.tabs-box.dragging {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+
+.tabs-box .tab {
+  font-size: 1.18rem;
+  white-space: nowrap;
+  background: #f5f4fd;
+  padding: 13px 20px;
+  border: 1px solid #d8d5f2;
+  cursor: pointer;
+}
+.tabs-box.dragging .tab {
+  user-select: none;
+}

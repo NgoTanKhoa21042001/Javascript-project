@@ -35,6 +35,7 @@ const copyColor = (elem, hexVal) => {
         colorElement.innerText = hexVal;
       }, 1000);
     });
+  console.log(elem);
 };
 
 refreshBtn.addEventListener("click", generatePalette);
