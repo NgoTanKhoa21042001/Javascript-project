@@ -64,4 +64,10 @@ body {
   padding: 16px 0;
   background: #17a2b8;
   color: #fff;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.wrapper textarea:valid ~ .save-btn {
+  opacity: 1;
+  pointer-events: auto;
 }

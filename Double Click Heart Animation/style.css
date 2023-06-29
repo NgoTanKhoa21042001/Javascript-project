@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  height: 420px;
+  width: 320px;
+  background-image: url("https://scontent.fdad3-4.fna.fbcdn.net/v/t39.30808-6/356251113_783408313437250_8874647782987563936_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5cd70e&_nc_ohc=Noh76HjkLEoAX9Q4Ixo&_nc_ht=scontent.fdad3-4.fna&oh=00_AfAmAQRf-rWRR0JZ4Td8nSpD4qDfMNlIFUyCTC9VqhYAxw&oe=64A2E61D");
+  background-size: contain;
+  background-position: center;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.container .heart {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: red;
+  opacity: 0;
+}
+.heart.active {
+  animation: animate 0.8s linear infinite;
+}
+
+@keyframes animate {
+  30% {
+    opacity: 1;
+    font-size: 80px;
+  }
+
+  50% {
+    opacity: 1;
+    font-size: 60px;
+  }
+  70% {
+    opacity: 1;
+    font-size: 70px;
+  }
+  80% {
+    opacity: 1;
+    font-size: 60px;
+  }
+  90% {
+    opacity: 1;
+    font-size: 60px;
+  }
+}
