@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e7f2fd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordition {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+}
+
+.accordition .image-box {
+  height: 360px;
+  width: 360px;
+}
+
+.accordition .image-box img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
